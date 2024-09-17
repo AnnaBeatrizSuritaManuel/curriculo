@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <!-- menu de navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">    
+    <main>
+      <section>
+        <h1>sobre mim</h1>
+        <p>Meu nome é Anna Beatriz, estou cursando o primeiro ano do ensino medio com tecnico em informatica para internet na etec Maria Cristina Medeiros </p>
+      </section>
+      <section>
+        <h2>Meus Cursos</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/etec-ribeirao-pires.jpg" class="" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso 1</h5>
+                <p class="card-text">Eu curso informaticana etec Maria Cristina Medeiros</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/espa.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso 2</h5>
+                <p class="card-text">mondly (curso de espanhol)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso 3</h5>
+                <p class="card-text">terceiro curso.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso 4</h5>
+                <p class="card-text">quarto curso.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+      <section>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                competencia 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>minha primeira competencia emocional é</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                competencia 2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               <p>minha segunda competencia emocional é</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                competencia 3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>minha terceira competencia emocional é</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- Aqui vou listar as minhas principais competências socio-emocionais -->
+        <!-- vou usar um componente chamado Accordion do bootstrap -->
+      </section>
+      <section>
+        <!-- Aqui vai um formulario de contato -->
+      </section>
+    </main>
+    
+  </div>
+  <footer>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nome:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <label for="exampleInputEmail1" class="form-label">Gmail:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text"></div>
+      </div>Não compartilharemos seu gmail com ninguem.
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">assunto:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Concordo em enviar</label>
+      </div>
+      <button type="submit" class="btn btn-primary">enviar</button>
+    </form><!-- informações gerais sobre o desenvolvimento deste site -->   
+       
+  </footer>
+
+  <script src="js/bootstrap.js"></script>      
+</body>
+</html>
