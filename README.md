@@ -1,1 +1,1 @@
-http://annabeatrizsuritamanuel.github.io/MeuCurriculo
+http://annabeatrizsuritamanuel.github.io/Curriculo
