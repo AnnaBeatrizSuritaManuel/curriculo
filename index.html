@@ -2,144 +2,162 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site com Bootstrap</title>
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>CurriculoWebBoosTrap</title>
 </head>
 <body>
-  <header>
-    <!-- menu de navegação -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="container">    
-    <main>
-      <section>
-        <h1>sobre mim</h1>
-        <p>Meu nome é Anna Beatriz, estou cursando o primeiro ano do ensino medio com tecnico em informatica para internet na etec Maria Cristina Medeiros </p>
-      </section>
-      <section>
-        <h2>Meus Cursos</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="img/etec-ribeirao-pires.jpg" class="" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Curso 1</h5>
-                <p class="card-text">Eu curso informaticana etec Maria Cristina Medeiros</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/espa.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Curso 2</h5>
-                <p class="card-text">mondly (curso de espanhol)</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Curso 3</h5>
-                <p class="card-text">terceiro curso.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Curso 4</h5>
-                <p class="card-text">quarto curso.</p>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </section>
-      <section>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                competencia 1
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>minha primeira competencia emocional é</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                competencia 2
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-               <p>minha segunda competencia emocional é</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                competencia 3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>minha terceira competencia emocional é</p>
-              </div>
-            </div>
-          </div>
-        </div><!-- Aqui vou listar as minhas principais competências socio-emocionais -->
-        <!-- vou usar um componente chamado Accordion do bootstrap -->
-      </section>
-      <section>
-        <!-- Aqui vai um formulario de contato -->
-      </section>
-    </main>
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1020;
+            background-color: #343a40;
+        }
     
+    
+        body {
+            margin: 0;
+        }
+    
+        .navbar-brand img {
+            max-height: 50px;
+        }
+    </style>
+    
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#competencias">Competências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-o-site">Sobre o Site</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section id="inicio">
+        <div class="banner">
+            <img src="" alt="Descrição da imagem">
+            <div class="banner-text">
+                <h2><strong>Meu nome é Anna Beatriz Surita Manuel, tenho 16 anos e curso primeiro ano na etec</strong></h2>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cursos">
+        <div class="top-text"></div>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="img/etec-ribeirao-pires.jpg" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">faço o primeiro ano do ensino medio com curso tecnico de informatica para internet</h5>
+                            <p class="card-text">estudo na etec, faço primeiro ano com informaticapara internete no periodo da tarde.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="card">
+                        <img src="img/espa.png" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">mondly (curso idiomas)</h5>
+                            <p class="card-text">Mondly é um aplicativo que ensina a lingua desejada desdo do nivel mais basico ate o avançado .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="competencias">
+        <div class="page-title">Competências Socioemocionais</div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                   primeira competencia
+                   </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>colaborção: sou boa em colaborar com meus colegas de equipe, e não tenho tanta dificuldade em me expressar e ajudar os outros.</strong> 
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    segunhda competencia
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Comunicação: consigo me comunicar bem com as pessoas.</strong> 
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        terceira competencia
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Curiosidade intelectual: tenho facilidade em aprender com erros passados alem de conseguir aprender de maneira bem facil com meus colegas.</strong> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+    <section id="sobre-o-site">
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; border-top: 2px solid black;">
+            <h3><strong>Informação sobre o desenvolvimento do site</strong></h3>
+            <div class="content-area">
+                <p class="text">Esse site foi usado para pode expressar minhas competencias, alem de tentar conseguir um currilo bom .</p>
+            </div>
+        </footer>
+    </section>
+    
+    <!-- Link para o Bootstrap CSS e JavaScript (se ainda não estiver incluído) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
   </div>
   <footer>
     <form>
